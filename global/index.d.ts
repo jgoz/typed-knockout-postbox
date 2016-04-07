@@ -4,7 +4,7 @@
 //                 John Gozde <https://github.com/jgoz>
 // Definitions: https://github.com/jgoz/typed-knockout-postbox
 
-declare module ko {
+declare namespace ko {
 
     export interface SubscribableFunctions<T> {
 
@@ -73,7 +73,7 @@ declare module ko {
 
     }
 
-    export module postbox {
+    export namespace postbox {
 
         /**
          * Subscribe to a topic.
