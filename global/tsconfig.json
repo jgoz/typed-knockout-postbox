@@ -1,8 +1,6 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "outDir": "out"
+    "target": "es5"
   },
   "files": [
     "typings/browser.d.ts",

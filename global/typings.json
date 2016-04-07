@@ -1,0 +1,10 @@
+{
+  "name": "knockout-postbox",
+  "main": "index.d.ts",
+  "homepage": "https://github.com/rniemeyer/knockout-postbox",
+  "version": "^0.5.2",
+  "ambient": true,
+  "ambientDependencies": {
+    "knockout": "registry:global/knockout#3.4.0+20160320223214"
+  }
+}
