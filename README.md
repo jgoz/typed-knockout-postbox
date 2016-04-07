@@ -6,13 +6,13 @@ The type definition for [`knockout-postbox`](https://github.com/rniemeyer/knocko
 **External module (recommended):**
 ```sh
 $ npm install knockout knockout-postbox
-$ typings install knockout github:jgoz/typed-knockout-postbox#v0.5.2
+$ typings install knockout knockout-postbox
 ```
 
 **Global module:**
 ```sh
 $ npm install knockout knockout-postbox
-$ typings install --ambient global!knockout github:jgoz/typed-knockout-postbox/global/typings.json#v0.5.2
+$ typings install --ambient global!knockout global!knockout-postbox
 ```
 
 ## Usage
