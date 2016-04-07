@@ -2,11 +2,14 @@
   "name": "knockout-postbox",
   "main": "index.d.ts",
   "homepage": "https://github.com/rniemeyer/knockout-postbox",
-  "version": "",
+  "version": "^0.5.2",
   "devDependencies": {
     "blue-tape": "registry:npm/blue-tape#0.1.0+20160322235613"
   },
   "ambientDevDependencies": {
     "node": "registry:dt/node#4.0.0+20160319033040"
+  },
+  "peerDependencies": {
+    "knockout": "registry:npm/knockout#3.4.0+20160320223214"
   }
 }
