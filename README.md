@@ -12,7 +12,7 @@ $ typings install knockout github:jgoz/typed-knockout-postbox#v0.5.2
 **Global module:**
 ```sh
 $ npm install knockout knockout-postbox
-$ typings install --ambient global!knockout github:jgoz/typed-knockout-postbox/global#v0.5.2
+$ typings install --ambient global!knockout github:jgoz/typed-knockout-postbox/global/typings.json#v0.5.2
 ```
 
 ## Usage
