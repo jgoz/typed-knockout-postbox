@@ -2,6 +2,7 @@
 // Project: https://github.com/rniemeyer/knockout-postbox
 // Definitions by: Judah Gabriel Himango <https://debuggerdotbreak.wordpress.com>,
 //                 John Gozde <https://github.com/jgoz>
+//                 James Kessler <https://github.com/vicero>
 // Definitions: https://github.com/jgoz/typed-knockout-postbox
 
 import * as ko from "knockout";
@@ -86,10 +87,12 @@ declare module "knockout" {
  *     Callback that will be executed when a new value is published to the topic.
  * @param target?
  *     Value to use for 'this' when executing 'handler'.
+ * @param initializeWithLatestValue?
+ *     Calls the handler after initialization with the latest value published to the topic.
  * @returns
  *     Knockout subscription instance that can be used to dispose this subscription.
  */
-export function subscribe<T>(topic: string, handler: (value: T) => void, target?: any): ko.subscription<T>;
+export function subscribe<T>(topic: string, handler: (value: T) => void, target?: any, initializeWithLatestValue?: boolean): ko.subscription<T>;
 
 /**
  * Publish a new value to a topic.
