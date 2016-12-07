@@ -5,7 +5,7 @@
     "outDir": "out"
   },
   "files": [
-    "typings/browser.d.ts",
+    "typings/index.d.ts",
     "index.d.ts"
   ]
 }

@@ -25,19 +25,19 @@ test("topicCache", {}, t => {
 });
 
 test("serializer", {}, t => {
-    postbox.serializer = v => "asdf";
+    (<any>postbox).serializer = v => "asdf";
 
     postbox.publish("t", 1);
     t.deepEqual(postbox.topicCache, { "t": { value: 1, serialized: "asdf" } });
 
-    postbox.serializer = serializer;
+    (<any>postbox).serializer = serializer;
     t.end();
 });
 
 test("defaultComparer", {}, t => {
     let value: number;
 
-    postbox.defaultComparer = (a, b) => true;
+    (<any>postbox).defaultComparer = (a, b) => true;
 
     postbox.subscribe<number>("t", v => { value = v; });
     const o = ko.observable(1).publishOn("t");
@@ -46,7 +46,7 @@ test("defaultComparer", {}, t => {
 
     t.equals(value, 1);
 
-    postbox.defaultComparer = defaultComparer;
+    (<any>postbox).defaultComparer = defaultComparer;
     t.end();
 });
 
