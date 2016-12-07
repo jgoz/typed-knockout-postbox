@@ -7,12 +7,13 @@ const defaultComparer = postbox.defaultComparer;
 const serializer = postbox.serializer;
 
 test("publish, subscribe", {}, t => {
-    let value: number;
+    let values: number[] = [];
 
-    postbox.subscribe<number>("t", v => { value = v; });
+    postbox.publish("t", 0);
+    postbox.subscribe<number>("t", v => { values.push(v); }, null, true);
     postbox.publish("t", 1);
 
-    t.equals(value, 1);
+    t.deepEqual(values, [0, 1]);
     t.end();
 });
 
